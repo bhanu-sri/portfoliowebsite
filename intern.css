@@ -1,0 +1,54 @@
+/* ... (Previous CSS code) ... */
+
+/* Background Color and Font Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #535353; /* Updated background color */
+}
+
+.internship {
+    display: block;
+    background-color: #fff; /* White background for each internship */
+    padding: 15px;
+    margin: 20px 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: glowing 2s infinite; /* Add glowing animation */
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8), 0 0 20px rgba(248, 245, 244, 0.8);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 30px rgba(0, 123, 255, 0.8);
+        transform: scale(1.02);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.8);
+        transform: scale(1);
+    }
+}
+
+h1 {
+    text-align: center;
+    color:white;
+}
+
+.internship h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #007bff; /* Blue color for company name */
+}
+
+.internship p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333; /* Dark gray color for domain and duration */
+}
+
+/* ... (Rest of the CSS code) ... */
